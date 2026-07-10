@@ -1,4 +1,6 @@
 local Essentials = import("ulexicxd/Essentials")
+local Players = fetch("Players")
 
-local newTimer = Essentials.Timer.new({})
-newTimer:Start()
+Players.Chatted:Connect(function(player, message)
+    print("[" .. player .. "]: " .. message)
+end)
