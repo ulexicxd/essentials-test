@@ -18,7 +18,7 @@ function ui(props)
     })
 end
 
-local ui_obj = ui_lib.new(self.Id, ui)
+local ui_obj = ui_lib.new(Id, ui)
 local rendered = false
 
 Players.PlayerAdded:Connect(function(player)
