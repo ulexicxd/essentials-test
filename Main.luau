@@ -1,6 +1,6 @@
 local Essentials = import("ulexicxd/Essentials")
-local Players = fetch("Players")
+local RunService = fetch("RunService")
 
-Players.Chatted:Connect(function(player, message)
-    print("[" .. player .. "]: " .. message)
+RunService.Heartbeat:Connect(function(delta: number)
+    print("FPS: " .. 1 / delta)
 end)
