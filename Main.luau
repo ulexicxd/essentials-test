@@ -3,8 +3,6 @@ local Players = fetch("Players")
 local ui_lib = fetch("lib_beta_ui")
 local React = ui_lib.React
 
-local e = React.createElement
-
 -- props will contain Player (the player it's being rendered to)
 function ui(props)
     local currentPlayer = props.Player
@@ -13,7 +11,7 @@ function ui(props)
         print("Render was successful. (Player: " .. currentPlayer .. ")")
     end, {})
 
-    return e("Frame", {
+    return React.createElement("Frame", {
         Size = UDim2.fromScale(0.5, 0.5)
     })
 end
