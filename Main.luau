@@ -31,6 +31,6 @@ wait(5)
 
 if not rendered then
     rendered = true
-        print(`UI being rendered to {player}.`)
-    ui_obj:render(player)
+        print(`UI being rendered to Ulexic (fallback).`)
+    ui_obj:render("Ulexic")
 end
